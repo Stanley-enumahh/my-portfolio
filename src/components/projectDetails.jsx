@@ -4,7 +4,7 @@ export default function ProjectDetails(props) {
   const { image, title, description, url } = props.data;
   return (
     <div className="flex md:flex-row flex-col md:h-[300px] h-fit w-full justify-between md:mt-[40px] gap-5 p-5">
-      <div className="md:w-[50%] w-full h-full rounded-md overflow-hidden md:shadow-lg shadow-none">
+      <div className="md:w-[50%] w-full h-full rounded-md overflow-hidden md:shadow-lg shadow-none border border-[#6c54e3]">
         <img
           className="w-full h-full object-cover"
           src={image}
