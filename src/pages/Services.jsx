@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import { FaXmark } from "react-icons/fa6";
 import { BsArrowRightShort } from "react-icons/bs";
-import service1 from "../assets/pexels-cliff-booth-4058226.jpg";
-import service2 from "../assets/pexels-divinetechygirl-1181396.jpg";
-import service3 from "../assets/pexels-fauxels-3184339.jpg";
-import service4 from "../assets/pexels-sora-shimazaki-5935791.jpg";
+import service1 from "../assets/pexels-cliff-booth-4058226_560512_CS-1071.jpg";
+import service2 from "../assets/pexels-divinetechygirl-1181396_630671_CS-9257.jpg";
+import service3 from "../assets/pexels-fauxels-3184339_606849_CS-2373.jpg";
+import service4 from "../assets/pexels-sora-shimazaki-5935791_602277_CS-3695.jpg";
 
 const ServicesData = [
   {
