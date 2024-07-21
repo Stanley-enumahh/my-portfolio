@@ -6,7 +6,7 @@ import { FaXmark } from "react-icons/fa6";
 export const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
   return (
-    <div className="backdrop-blur-lg relative flex flex-row justify-between items-center md:fixed top-0 md:py-3 py-2 md:w-[80%] w-full md:p-0  px-3 md:shadow-none shadow z-50">
+    <div className="backdrop-blur-lg flex flex-row justify-between items-center fixed top-0 md:py-3 py-2 md:w-[80%] w-full md:p-0  px-3 md:shadow-none shadow z-50">
       <div>
         <h1 className="text-lg font-bold">
           Stanlee <span className="text-[#6c54e3]">*</span>

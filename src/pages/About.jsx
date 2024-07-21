@@ -9,7 +9,7 @@ export default function About() {
     <div className="bg-[#ebebeb] w-full h-screen flex flex-col  justify-start md:justify-center items-center overflow-hidden">
       <Navbar />
       {/* main div */}
-      <div className=" flex flex-col md:h-[80%] h-[75%] w-[90%] mt-[30px] md:justify-center md:items-center gap-4 md:mt-0 ">
+      <div className="mt-[80px] flex flex-col md:h-[80%] h-[75%] w-[90%] md:justify-center md:items-center gap-4 md:mt-0 ">
         <div className="md:text-center select-none">
           <h1 className="md:text-xl text-lg font-bold">About me</h1>
           <p className="text-sm text-slate-600">A little introduction</p>

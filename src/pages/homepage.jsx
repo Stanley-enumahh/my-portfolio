@@ -10,8 +10,8 @@ export default function HomePage() {
   return (
     <div className="flex relative md:justify-center justify-start flex-col items-center h-screen bg-[#ebebeb]">
       <Navbar />
-      <div className=" flex md:flex-row flex-col mt-[0px] justify-start md:justify-between md:w-[80%] w-full">
-        <div className="mt-[40px] md:mt-0 flex md:flex-row flex-col-reverse md:w-[75%] w-full justify-between md:items-center md:ml-0 ml-4 md:mb-20">
+      <div className="flex md:flex-row flex-col mt-[0px] justify-start md:justify-between md:w-[80%] w-full">
+        <div className="mt-[80px] md:mt-0 flex md:flex-row flex-col-reverse md:w-[75%] w-full justify-between md:items-center md:ml-0 ml-4 md:mb-20">
           <div className="flex md:flex-col flex-row gap-4 text-[#6c54e3] md:mt-0 mt-[30px]">
             <FaTwitter className="cursor-pointer" />
             <RiInstagramFill className="cursor-pointer" />

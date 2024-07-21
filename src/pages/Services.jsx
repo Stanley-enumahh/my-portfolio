@@ -34,7 +34,7 @@ export default function Services() {
   return (
     <div className="flex relative md:justify-center justify-start flex-col items-center h-fit bg-[#ebebeb]">
       <Navbar />
-      <div className="flex flex-col gap-10 mt-5 md:mt-16 w-full  md:w-[90%] items-center">
+      <div className="flex mt-[80px] flex-col gap-10 md:mt-16 w-full  md:w-[90%] items-center">
         <div className="text-center md:px-0 px-7">
           <h1 className="font-bold text-xl">Services</h1>
           <p className="text-sm">
@@ -56,7 +56,7 @@ const ServicesDetails = (props) => {
   const { title, info, Image } = props.data;
   const [learnMore, setLearnMore] = useState(false);
   return (
-    <div className="relative w-[80%] md:w-[260px] h-[300px] md:h-[270px] flex justify-between flex-col shadow-lg rounded-md overflow-hidden border-1 border-[#6c54e3]">
+    <div className="relative w-[90%] md:w-[260px] h-[300px] md:h-[270px] flex justify-between flex-col shadow-lg rounded-md overflow-hidden border-1 border-[#6c54e3]">
       <div className=" absolute w-full h-full">
         <img className="w-full h-full object-cover" src={Image} alt="" />
       </div>
