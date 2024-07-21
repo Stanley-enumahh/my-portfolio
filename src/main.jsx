@@ -6,6 +6,7 @@ import "./index.css";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import { Link } from "react-router-dom";
+import Services from "./pages/Services.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: (
       <div>
-        Oops seems like you lost your way! <br /> Go back to{" "}
+        Oops seems like you lost your way! <br /> Go back to
         <Link className="underline" to="/">
           Home
         </Link>
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/services",
+    element: <Services />,
   },
   {
     path: "/projects",

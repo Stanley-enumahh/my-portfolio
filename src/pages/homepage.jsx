@@ -1,10 +1,9 @@
-import React from "react";
 import { Navbar } from "../components/Navbar";
 import { FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaFileDownload } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 export default function HomePage() {
@@ -17,19 +16,20 @@ export default function HomePage() {
             <FaTwitter className="cursor-pointer" />
             <RiInstagramFill className="cursor-pointer" />
             <FaLinkedin className="cursor-pointer" />
+            <FaGithub className="cursor-pointer" />
           </div>
           <div className="w-[80%] gap-3 flex flex-col text-slate-700">
             <h1 className="font-bold text-black md:text-3xl text-2xl">
               Hi, I'm Stanlee
             </h1>
             <h2 className="font-semibold">frontend Developer</h2>
-            <p className="text-sm md:text-lg">
+            <p className="text-sm md:text-lg mt-3">
               I'm passionate about developing user-friendly and responsive
               interfaces. With strong foundation in HTML, CSS, Javascript, React
               and other Frameworks. I create modern web applications that
               deliver seamless user experiences.Go on and explore my projects.
             </p>
-            <button className=" mt-3 w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md">
+            <button className=" md:mt-8 mt-12  w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md shadow-md">
               <Link
                 className="flex flex-row gap-2 items-center"
                 to="https://wa.me/qr/X3EWPKC7LIIUB1"
