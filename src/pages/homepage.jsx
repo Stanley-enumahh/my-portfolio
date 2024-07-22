@@ -4,22 +4,29 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+import { DarkmodeContext } from "../contexts/darkmodeContext";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
 
 export default function HomePage() {
+  const { darkMode } = useContext(DarkmodeContext);
   return (
-    <div className="flex relative md:justify-center justify-start flex-col items-center h-screen bg-[#ebebeb]">
+    <div
+      className={`flex relative md:justify-center justify-start flex-col items-center h-screen bg-[#ebebeb] dark:bg-[#5f0a87] ${
+        darkMode && "dark"
+      }`}
+    >
       <Navbar />
       <div className="flex md:flex-row flex-col mt-[0px] justify-start md:justify-between md:w-[80%] w-full">
         <div className="mt-[80px] md:mt-0 flex md:flex-row flex-col-reverse md:w-[75%] w-full justify-between md:items-center md:ml-0 ml-4 md:mb-20">
           <div className="flex md:flex-col flex-row gap-4 text-[#6c54e3] md:mt-0 mt-[30px]">
-            <FaTwitter className="cursor-pointer" />
-            <RiInstagramFill className="cursor-pointer" />
-            <FaLinkedin className="cursor-pointer" />
-            <FaGithub className="cursor-pointer" />
+            <FaTwitter className="cursor-pointer hover:-translate-y-1 duration-150 transition-all" />
+            <RiInstagramFill className="cursor-pointer hover:-translate-y-1 duration-150 transition-all" />
+            <FaLinkedin className="cursor-pointer hover:-translate-y-1 duration-150 transition-all" />
+            <FaGithub className="cursor-pointer hover:-translate-y-1 duration-150 transition-all" />
           </div>
-          <div className="w-[80%] gap-3 flex flex-col text-slate-700">
-            <h1 className="font-bold text-black md:text-3xl text-2xl">
+          <div className="w-[80%] gap-3 flex flex-col dark:text-neutral-200 text-slate-700">
+            <h1 className="font-bold dark:text-neutral-200  text-black md:text-3xl text-2xl">
               Hi, I'm Stanlee
             </h1>
             <h2 className="font-semibold">frontend Developer</h2>
@@ -29,7 +36,7 @@ export default function HomePage() {
               and other Frameworks. I create modern web applications that
               deliver seamless user experiences.Go on and explore my projects.
             </p>
-            <button className=" md:mt-8 mt-12  w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md shadow-md">
+            <button className=" md:mt-8 mt-12  w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md shadow-md hover:bg-[#8876e1] duration-150 transition-all">
               <Link
                 className="flex flex-row gap-2 items-center"
                 to="https://wa.me/qr/X3EWPKC7LIIUB1"

@@ -4,7 +4,8 @@ import Slider from "react-slick";
 import Project1 from "../assets/project1.jpg";
 import Project2 from "../assets/suitplus-image1.jpg";
 import Project3 from "../assets/mortgage-cal.jpg";
-
+import { DarkmodeContext } from "../contexts/darkmodeContext";
+import { useContext } from "react";
 const ProjectData = [
   {
     image: Project2,
@@ -37,13 +38,20 @@ export default function Projects() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  const { darkMode } = useContext(DarkmodeContext);
   return (
-    <div className="w-full h-screen flex flex-col md:items-center items-start bg-[#ebebeb] overflow-hidden">
+    <div
+      className={`dark:bg-[#5f0a87] w-full h-screen flex flex-col md:items-center items-start bg-[#ebebeb] overflow-hidden ${
+        darkMode && "dark"
+      }`}
+    >
       <Navbar />
-      <div className="md:h-[75%] mt-[80px] h-full w-[80%] flex flex-col items-center md:gap-10 gap-5 ml-5">
+      <div className="md:h-[75%] md:mt-[40px] mt-[80px] h-full w-[80%] flex flex-col items-center md:gap-10 gap-5 ml-5">
         <div className="text-center md:mt-11 mt-0 flex flex-col md:items-center items-start w-full">
-          <h1 className="font-bold md:text-2xl text-lg">Projects</h1>
-          <p className="md:text-sm text-xs text-slate-600">
+          <h1 className="font-bold md:text-2xl text-lg dark:text-neutral-200">
+            Projects
+          </h1>
+          <p className="md:text-sm text-xs text-slate-600 dark:text-neutral-300">
             View my most recent projects
           </p>
         </div>
@@ -71,9 +79,11 @@ const ProjectDetails = (props) => {
         />
       </div>
       <div className="md:w-[50%] w-full flex flex-col gap-6 justify-center p-5">
-        <h1 className="font-bold md:text-lg uppercase">{title}</h1>
-        <p className="text-sm">{description}</p>
-        <button className="flex flex-row gap-2 items-center mt-3 w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md text-sm outline-none border-0 hover:bg-[#9787e5] duration-150 transition-all">
+        <h1 className="font-bold md:text-lg uppercase dark:text-neutral-200">
+          {title}
+        </h1>
+        <p className="text-sm dark:text-neutral-200">{description}</p>
+        <button className="flex flex-row gap-2 items-center mt-3 w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md text-sm outline-none border-0 hover:bg-[#8876e1] duration-150 transition-all">
           <Link to={url}>view live</Link>
         </button>
       </div>
