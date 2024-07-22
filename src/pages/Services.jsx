@@ -34,7 +34,7 @@ export default function Services() {
   const { darkMode } = useContext(DarkmodeContext);
   return (
     <div
-      className={` dark:bg-[#5f0a87] flex relative md:justify-center justify-start flex-col items-center h-fit bg-[#ebebeb] ${
+      className={` dark:bg-[#5b04bc]  flex relative md:justify-center justify-start flex-col items-center h-fit bg-[#ebebeb] ${
         darkMode && "dark"
       } `}
     >

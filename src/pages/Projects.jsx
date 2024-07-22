@@ -41,7 +41,7 @@ export default function Projects() {
   const { darkMode } = useContext(DarkmodeContext);
   return (
     <div
-      className={`dark:bg-[#5f0a87] w-full h-screen flex flex-col md:items-center items-start bg-[#ebebeb] overflow-hidden ${
+      className={`dark:bg-[#5b04bc]  w-full h-screen flex flex-col md:items-center items-start bg-[#ebebeb] overflow-hidden ${
         darkMode && "dark"
       }`}
     >

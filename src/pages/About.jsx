@@ -10,7 +10,7 @@ export default function About() {
   const { darkMode } = useContext(DarkmodeContext);
   return (
     <div
-      className={`bg-[#ebebeb] w-full h-screen flex flex-col  justify-start md:justify-center items-center overflow-hidden dark:bg-[#5f0a87] ${
+      className={`bg-[#ebebeb] w-full h-screen flex flex-col  justify-start md:justify-center items-center overflow-hidden dark:bg-[#5b04bc]  ${
         darkMode && "dark"
       }`}
     >
@@ -27,10 +27,10 @@ export default function About() {
         </div>
         <div className="relative md:w-[80%] md:h-[80%] w-full flex md:flex-row flex-col-reverse justify-between items-center">
           <div className="hidden md:flex absolute w-[300px] h-[380px] border-2 border-black left-[20px] top-[30px] shadow-lg dark:border-neutral-200"></div>
-          <div className="abt-image-conatainer flex w-full mb-6 md:h-full h-[80%] mt-6 justify-center  md:w-[30%] rounded-lg overflow-hidden shadow-md">
+          <div className="abt-image-conatainer flex w-full mb-6 md:h-full h-[80%] mt-6 justify-center   md:w-[30%] rounded-lg overflow-hidden md:shadow-md">
             <img
               src={ProfilePix}
-              className="md:h-full h-[75%] w-full object-cover z-10"
+              className="md:h-full h-[70%] w-[90%] object-cover z-10 mt-6 shadow-lg md:shadow-none"
               alt="profilepix"
             />
           </div>
@@ -42,19 +42,25 @@ export default function About() {
             </p>
             <div className="select-none flex flex-row justify-between  items-start w-full">
               <div className=" rounded-md text-center text-xs flex flex-col w-[80px] p-2 shadow-lg">
-                <h1 className="font-bold text-sm text-[#6c54e3]">2+</h1>
+                <h1 className="font-bold text-sm text-[#6c54e3] dark:text-neutral-200">
+                  2+
+                </h1>
                 <p className="dark:text-neutral-200 text-black">
                   years of experience
                 </p>
               </div>
               <div className="rounded-md text-center text-xs flex flex-col w-[80px] p-2 shadow-lg">
-                <h1 className="font-bold text-sm text-[#6c54e3]">20+</h1>
-                <p className="dark:text-neutral-200 text-black">
+                <h1 className="font-bold text-sm text-[#6c54e3] dark:text-neutral-200">
+                  20+
+                </h1>
+                <p className="dark:text-neutral-200 text-black ">
                   projects completed
                 </p>
               </div>
               <div className="rounded-md text-center text-xs flex flex-col w-[80px] p-2 shadow-md">
-                <h1 className="font-bold text-sm text-[#6c54e3]">10+</h1>
+                <h1 className="font-bold text-sm text-[#6c54e3] dark:text-neutral-200">
+                  10+
+                </h1>
                 <p className="dark:text-neutral-200 text-black">Open source</p>
               </div>
             </div>

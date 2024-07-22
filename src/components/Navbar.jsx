@@ -14,7 +14,7 @@ export const Navbar = () => {
   };
   return (
     <div
-      className={` dark:bg-[#5f0a87] dark:text-white backdrop-blur-lg flex flex-row justify-between items-center fixed top-0 md:py-3 py-2 md:w-[80%] w-full md:p-0  px-3 md:shadow-none shadow z-50 bg-[#ebebeb] ${
+      className={` dark:bg-[#5b04bc] dark:text-white backdrop-blur-lg flex flex-row justify-between items-center fixed top-0 py-3 md:w-[80%] w-full md:p-0  px-3 md:shadow-none shadow z-50 bg-[#ebebeb] ${
         darkMode && "dark"
       }`}
     >
@@ -25,13 +25,13 @@ export const Navbar = () => {
       </div>
       <div className="flex flex-row gap-5 z-50">
         <ul
-          className={`flex md:flex-row flex-col md:static absolute top-0 bg-[#6c54e3] dark:text-neutral-200 text-white md:bg-transparent md:text-black md:h-fit h-screen md:w-fit w-[60%] md:p-0 z-50 p-4 duration-150 transition-all gap-8 items-center ${
+          className={`flex md:flex-row flex-col md:static absolute top-0 bg-[#6c54e3] dark:text-neutral-200  text-white md:bg-transparent md:text-black md:h-fit h-screen md:w-fit w-[60%] md:p-0 z-50 p-4 duration-150 transition-all gap-8 items-center ${
             sideNav ? "right-[0]" : "right-[-60%]"
           }`}
         >
           <FaXmark
-            className="md:text-black text-white dark:text-white cursor-pointer md:hidden flex absolute right-3
-          top-4"
+            className="md:text-black text-white dark:text-white cursor-pointer md:hidden flex absolute right-4
+          top-5"
             onClick={() => setSideNav(!sideNav)}
           />
           <li
@@ -64,9 +64,12 @@ export const Navbar = () => {
           </li>
           <li
             onClick={handleDarkAndSidebar}
-            className="Links flex items-center bg-[#6c54e3] text-sm text-white px-2 py-2 cursor-pointer rounded-full hover:bg-[#8876e1] duration-150 transition-all"
+            className="Links flex items-center gap-3 bg-[#6c54e3] text-sm text-white px-2 py-2 cursor-pointer rounded-full hover:bg-[#8876e1] duration-150 transition-all"
           >
-            <MdDarkMode className="dark:text-black text-sm" />
+            <p className="flex md:hidden">
+              {darkMode ? "Light mode" : "Dark mode"}
+            </p>
+            <MdDarkMode className="dark:text-neutral-200 text-sm text-black" />
           </li>
         </ul>
 
