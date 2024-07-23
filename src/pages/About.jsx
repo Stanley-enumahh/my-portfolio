@@ -10,7 +10,7 @@ export default function About() {
   const { darkMode } = useContext(DarkmodeContext);
   return (
     <div
-      className={`bg-[#ebebeb] w-full h-screen flex flex-col  justify-start md:justify-center items-center overflow-hidden dark:bg-[#5b04bc]  ${
+      className={`bg-[#ebebeb] w-full md:h-screen h-fit flex flex-col  justify-start md:justify-center items-center overflow-hidden dark:bg-[#0f172a]  ${
         darkMode && "dark"
       }`}
     >
@@ -30,26 +30,33 @@ export default function About() {
           <div className="abt-image-conatainer flex w-full mb-6 md:h-full h-[80%] mt-6 justify-center   md:w-[30%] rounded-lg overflow-hidden md:shadow-md">
             <img
               src={ProfilePix}
-              className="md:h-full h-[70%] w-[90%] object-cover z-10 mt-6 shadow-lg md:shadow-none"
+              className="md:h-full h-[340px] md:w-full w-[90%] object-cover z-10 mt-6 shadow-lg md:shadow-none"
               alt="profilepix"
             />
           </div>
-          <div className="flex flex-col gap-4 md:w-[40%] w-full items-start">
-            <p className="w-[80%] text-start text-sm select-none dark:text-neutral-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              rerum omnis eaque aut ullam, quos earum officiis recusandae
-              repellendus veniam.
+          <div className="flex flex-col gap-4 md:w-[45%] w-full items-start">
+            <p className="w-full text-start text-sm select-none dark:text-neutral-200">
+              Born in the eastern part of Nigeria, I began my journey as a
+              frontend developer about a year ago, driven by a passion for
+              creativity and competency. I've had the opportunity to work on
+              several projects using several frameworks and library and have
+              consistently sought to improve my level of knowledge and most
+              importantly myself.
+              <br />
+              Feel free to eexplore my portfolio and let's start a
+              conversationon how to bring your visions to life
+              <h1 className="font-bold mt-2">Let's connect!</h1>
             </p>
             <div className="select-none flex flex-row justify-between  items-start w-full">
-              <div className=" rounded-md text-center text-xs flex flex-col w-[80px] p-2 shadow-lg">
+              <div className=" rounded-md dark:bg-[#5b04bc] text-center text-xs flex flex-col w-[80px] p-2 shadow-lg">
                 <h1 className="font-bold text-sm text-[#6c54e3] dark:text-neutral-200">
-                  2+
+                  1+
                 </h1>
                 <p className="dark:text-neutral-200 text-black">
                   years of experience
                 </p>
               </div>
-              <div className="rounded-md text-center text-xs flex flex-col w-[80px] p-2 shadow-lg">
+              <div className="rounded-md dark:bg-[#5b04bc] text-center text-xs flex flex-col w-[80px] p-2 shadow-lg">
                 <h1 className="font-bold text-sm text-[#6c54e3] dark:text-neutral-200">
                   20+
                 </h1>
@@ -57,14 +64,14 @@ export default function About() {
                   projects completed
                 </p>
               </div>
-              <div className="rounded-md text-center text-xs flex flex-col w-[80px] p-2 shadow-md">
+              <div className="rounded-md dark:bg-[#5b04bc] text-center text-xs flex flex-col w-[80px] p-2 shadow-md">
                 <h1 className="font-bold text-sm text-[#6c54e3] dark:text-neutral-200">
-                  10+
+                  6+
                 </h1>
                 <p className="dark:text-neutral-200 text-black">Open source</p>
               </div>
             </div>
-            <button className="hover:bg-[#8876e1] duration-150 transition-all flex flex-row gap-2 outline-none items-center mt-3  w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md text-sm">
+            <button className="hover:bg-[#8876e1] duration-150 transition-all flex flex-row gap-2 outline-none items-center mt-3  w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md text-sm dark:bg-[#5b04bc]">
               Download CV <FaFileDownload />
             </button>
           </div>

@@ -11,7 +11,7 @@ const ProjectData = [
     image: Project2,
     title: "SUIT-PLUS",
     description:
-      " This an open source internship project, focused on building a web-app that pprovides different kinds of suits for men and addresses several market needs and problems.",
+      " Suit-plus is an open source internship project, focused on building a web-app that pprovides different kinds of suits for men and addresses several market needs and problems.",
   },
   {
     image: Project1,
@@ -41,7 +41,7 @@ export default function Projects() {
   const { darkMode } = useContext(DarkmodeContext);
   return (
     <div
-      className={`dark:bg-[#5b04bc]  w-full h-screen flex flex-col md:items-center items-start bg-[#ebebeb] overflow-hidden ${
+      className={`dark:bg-[#0f172a]  w-full h-screen flex flex-col md:items-center items-start bg-[#ebebeb] overflow-hidden ${
         darkMode && "dark"
       }`}
     >
@@ -55,7 +55,7 @@ export default function Projects() {
             View my most recent projects
           </p>
         </div>
-        <div className="md:w-[90%] w-full h-full ml-5 md:ml-0">
+        <div className="md:w-[90%] w-full h-full ml-5 md:ml-0 mt-5 md:mt-0">
           <Slider {...settings}>
             {ProjectData.map((project, index) => {
               return <ProjectDetails data={project} key={index} />;
@@ -83,8 +83,8 @@ const ProjectDetails = (props) => {
           {title}
         </h1>
         <p className="text-sm dark:text-neutral-200">{description}</p>
-        <button className="flex flex-row gap-2 items-center mt-3 w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md text-sm outline-none border-0 hover:bg-[#8876e1] duration-150 transition-all">
-          <Link to={url}>view live</Link>
+        <button className="flex flex-row gap-2 items-center mt-3 w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md text-sm outline-none dark:bg-[#5b04bc] border-0 hover:bg-[#8876e1] duration-150 transition-all">
+          <Link to={url}>View Live</Link>
         </button>
       </div>
     </div>

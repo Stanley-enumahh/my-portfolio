@@ -11,7 +11,7 @@ const ServicesData = [
   {
     Image: service1,
     title: "Web design and development",
-    info: "I design and build modern responsive websites from scratch including design, layout and funcunality",
+    info: "I design and build modern responsive websites from scratch including design, layout and functionality",
   },
   {
     Image: service2,
@@ -21,12 +21,12 @@ const ServicesData = [
   {
     Image: service3,
     title: "Web security",
-    info: "Ensuring websites are totally secure, including SSL certificates, aunthetifications, vunerability testing and security audits",
+    info: "Ensuring websites are totally secure, including SSL certificates, authentifications, vunerability testing and security audits",
   },
   {
     Image: service4,
     title: "Maintenance and Updates",
-    info: "I provide regular updating and maintaining websites to ensure they remain secure, fast, functional and up-to-date technology.",
+    info: "I provide regular updating and maintaining of websites to ensure they remain secure, fast, functional and uses up-to-date technology.",
   },
 ];
 
@@ -34,12 +34,12 @@ export default function Services() {
   const { darkMode } = useContext(DarkmodeContext);
   return (
     <div
-      className={` dark:bg-[#5b04bc]  flex relative md:justify-center justify-start flex-col items-center h-fit bg-[#ebebeb] ${
+      className={` dark:bg-[#0f172a]   flex relative md:justify-center justify-start flex-col items-center h-fit bg-[#ebebeb] ${
         darkMode && "dark"
       } `}
     >
       <Navbar />
-      <div className=" flex mt-[80px] flex-col gap-10 md:mt-16 w-full  md:w-[90%] items-center">
+      <div className=" flex mt-[80px] flex-col gap-10 md:mt-20 w-full  md:w-[90%] items-center">
         <div className="text-center md:px-0 px-7">
           <h1 className="font-bold text-xl dark:text-neutral-100">Services</h1>
           <p className="text-sm dark:text-neutral-200">
