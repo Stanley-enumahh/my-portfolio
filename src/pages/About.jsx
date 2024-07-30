@@ -2,6 +2,7 @@ import { Navbar } from "../components/Navbar";
 import ProfilePix from "../assets/IMG_1636-1_702906_CS-8325.jpeg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import myResume from "../assets/EnumahStanleyOluebubeResume (1).pdf";
 import { FaFileDownload } from "react-icons/fa";
 import { DarkmodeContext } from "../contexts/darkmodeContext";
 import { useContext } from "react";
@@ -26,8 +27,8 @@ export default function About() {
           </p>
         </div>
         <div className="relative md:w-[80%] md:h-[80%] w-full flex md:flex-row flex-col-reverse justify-between items-center">
-          <div className="hidden md:flex absolute w-[300px] h-[380px] border-2 border-black left-[20px] top-[30px] shadow-lg dark:border-neutral-200"></div>
-          <div className="abt-image-conatainer flex w-full mb-6 md:h-full h-[80%] mt-6 justify-center   md:w-[30%] rounded-lg overflow-hidden md:shadow-md">
+          <div className="hidden md:flex absolute w-[300px] h-[380px] border-2 border-black left-[20px] top-[30px] shadow-lg dark:border-[#5b04bc]"></div>
+          <div className="abt-image-conatainer flex w-full mb-6 md:h-full h-[80%] mt-6 justify-center  md:w-[30%] rounded-lg overflow-hidden md:shadow-md">
             <img
               src={ProfilePix}
               className="md:h-full h-[340px] md:w-full w-[90%] object-cover z-10 mt-6 shadow-lg md:shadow-none"
@@ -43,7 +44,7 @@ export default function About() {
               consistently sought to improve my level of knowledge and most
               importantly myself.
               <br />
-              Feel free to eexplore my portfolio and let's start a
+              Feel free to explore my portfolio and let's start a
               conversationon how to bring your visions to life
               <h1 className="font-bold mt-2">Let's connect!</h1>
             </p>
@@ -71,8 +72,14 @@ export default function About() {
                 <p className="dark:text-neutral-200 text-black">Open source</p>
               </div>
             </div>
-            <button className="hover:bg-[#8876e1] duration-150 transition-all flex flex-row gap-2 outline-none items-center mt-3  w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md text-sm dark:bg-[#5b04bc]">
-              Download CV <FaFileDownload />
+            <button className="hover:bg-[#8876e1] duration-150 transition-all flex flex-row gap-2 outline-none mt-3  w-fit px-3 py-2 bg-[#6c54e3] text-white rounded-md text-sm dark:bg-[#5b04bc]">
+              <a
+                className="flex flex-row gap-2 items-center"
+                href={myResume}
+                download={myResume}
+              >
+                Download Resume <FaFileDownload />
+              </a>
             </button>
           </div>
         </div>

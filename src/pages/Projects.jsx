@@ -46,7 +46,7 @@ export default function Projects() {
       }`}
     >
       <Navbar />
-      <div className="md:h-[75%] md:mt-[40px] mt-[80px] h-full w-[80%] flex flex-col items-center md:gap-10 gap-5 ml-5">
+      <div className="md:h-[75%] md:mt-[35px] mt-[80px] h-full w-[80%] flex flex-col items-center md:gap-10 gap-5 ml-5">
         <div className="text-center md:mt-11 mt-0 flex flex-col md:items-center items-start w-full">
           <h1 className="font-bold md:text-2xl text-lg dark:text-neutral-200">
             Projects
@@ -55,13 +55,15 @@ export default function Projects() {
             View my most recent projects
           </p>
         </div>
-        <div className="md:w-[90%] w-full h-full ml-5 md:ml-0 mt-5 md:mt-0">
+        <div className="md:w-[90%] cursor-grab w-full h-full ml-5 md:ml-0 mt-5 md:mt-0">
           <Slider {...settings}>
             {ProjectData.map((project, index) => {
               return <ProjectDetails data={project} key={index} />;
             })}
           </Slider>
         </div>
+
+        <Footer />
       </div>
     </div>
   );
@@ -70,7 +72,7 @@ export default function Projects() {
 const ProjectDetails = (props) => {
   const { image, title, description, url } = props.data;
   return (
-    <div className="flex md:flex-row flex-col md:h-[300px] h-fit w-full justify-between md:gap-10 gap-5 md:px-5">
+    <div className="md:mb-4 flex md:flex-row flex-col md:h-[300px] h-fit w-full justify-between md:gap-10 gap-5 md:px-5">
       <div className="md:w-[50%] w-full h-full rounded-md overflow-hidden md:shadow-lg shadow-none border border-[#6c54e3]">
         <img
           className="w-full h-full object-cover cursor-pointer"
@@ -90,3 +92,11 @@ const ProjectDetails = (props) => {
     </div>
   );
 };
+
+function Footer() {
+  return (
+    <footer className="dark:text-neutral-200 md:mt-8 text-xs  flex justify-center items-center p-3">
+      {new Date().getFullYear()} <p>&copy; All rights reserved</p>
+    </footer>
+  );
+}

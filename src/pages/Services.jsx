@@ -43,8 +43,7 @@ export default function Services() {
         <div className="text-center md:px-0 px-7">
           <h1 className="font-bold text-xl dark:text-neutral-100">Services</h1>
           <p className="text-sm dark:text-neutral-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-            temporibus!
+            Here's a display of some of the crucial services i provide
           </p>
         </div>
         <div className=" flex md:flex-row flex-col flex-wrap gap-y-8 justify-center items-center md:items-tart cursor-pointer rounded-lg overflow-hidden md:justify-between md:w-[70%] w-full h-fit mb-10">

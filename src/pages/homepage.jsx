@@ -21,13 +21,13 @@ export default function HomePage() {
         <div className="mt-[80px] md:mt-0 flex md:flex-row flex-col-reverse md:w-[75%] w-full justify-between md:items-center md:ml-0 ml-4 md:mb-20">
           <div className="flex md:flex-col flex-row gap-4 text-[#6c54e3] md:mt-0 mt-[30px]">
             <a href="https://twitter.com/StanLee53959205">
-              <FaTwitter className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all" />
+              <FaTwitter className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all text-xl" />
             </a>
 
-            <RiInstagramFill className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all" />
-            <FaLinkedin className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all" />
+            <FaGithub className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all text-xl" />
+            <FaLinkedin className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all text-xl" />
             <a href="https://github.com/Stanley-enumahh">
-              <FaGithub className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all" />
+              <RiInstagramFill className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all text-xl" />
             </a>
           </div>
           <div className="w-[80%] gap-3 flex flex-col dark:text-neutral-200 text-slate-700">
@@ -47,7 +47,7 @@ export default function HomePage() {
                 className="flex flex-row gap-2 items-center"
                 to="https://wa.me/qr/X3EWPKC7LIIUB1"
               >
-                Contact me <FaWhatsapp />
+                Get in touch <FaWhatsapp />
               </Link>
             </button>
           </div>

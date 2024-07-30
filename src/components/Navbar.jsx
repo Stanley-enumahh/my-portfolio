@@ -53,11 +53,18 @@ export const Navbar = () => {
               <Link to="/about">About me</Link>
               <span className="Nav-span dark:bg-neutral-300"></span>
             </li>
-            <li
+            {/* <li
               onClick={() => setSideNav(!sideNav)}
               className="Links flex flex-col text-sm"
             >
               <Link to="/services">Services</Link>
+              <span className="Nav-span dark:bg-neutral-300"></span>
+            </li> */}
+            <li
+              onClick={() => setSideNav(!sideNav)}
+              className="Links flex flex-col text-sm "
+            >
+              <Link to="/tech-stacks">Tech Stacks</Link>
               <span className="Nav-span dark:bg-neutral-300"></span>
             </li>
             <li
