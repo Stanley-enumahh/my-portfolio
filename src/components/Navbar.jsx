@@ -30,7 +30,7 @@ export const Navbar = () => {
         </div>
         <div className="flex flex-row gap-5 z-50">
           <ul
-            className={`flex md:flex-row flex-col md:static absolute top-0 bg-[#6c54e3] dark:text-neutral-200  text-white md:bg-transparent md:text-black md:h-fit h-screen md:w-fit w-[60%] md:p-0 z-50 p-4 duration-150 transition-all gap-8 items-center ${
+            className={`flex md:flex-row flex-col md:static absolute top-0 bg-[#6c54e3] dark:text-neutral-200 shadow-lg md:shadow-none  text-white md:bg-transparent md:text-black md:h-fit h-screen md:w-fit w-[60%] md:p-0 z-50 p-4 duration-150 transition-all gap-8 items-center ${
               sideNav ? "right-[0]" : "right-[-60%]"
             }`}
           >
@@ -53,13 +53,6 @@ export const Navbar = () => {
               <Link to="/about">About me</Link>
               <span className="Nav-span dark:bg-neutral-300"></span>
             </li>
-            {/* <li
-              onClick={() => setSideNav(!sideNav)}
-              className="Links flex flex-col text-sm"
-            >
-              <Link to="/services">Services</Link>
-              <span className="Nav-span dark:bg-neutral-300"></span>
-            </li> */}
             <li
               onClick={() => setSideNav(!sideNav)}
               className="Links flex flex-col text-sm "

@@ -9,6 +9,7 @@ import github from "../assets/stacks/png-clipart-github-black-logo-landscape-tec
 import Git from "../assets/stacks/512px-Git-logo.svg-removebg-preview.png";
 import CSSLogo from "../assets/stacks/a9dcc740cad3149598307b5de8bc10c3-removebg-preview.png";
 import htmlLogo from "../assets/stacks/HTML5-wow-removebg-preview (1).png";
+import Vercel from "../assets/stacks/png-transparent-vercel-hd-logo-thumbnail-removebg-preview.png";
 
 const StactData = [
   {
@@ -32,6 +33,11 @@ const StactData = [
     image: Git,
     text: "git",
   },
+  {
+    image: Vercel,
+    text: "Vercel",
+  },
+
   {
     image: Javascript,
     text: "Javascript",
@@ -63,7 +69,7 @@ export const TechStacks = () => {
             Unveiling technologies that i mostly make use of;
           </p>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-5 items-center w-full md:w-[80%] h-[60%] md:h-[80%]">
+        <div className="grid grid-cols-3 md:grid-cols-5 items-center md:ml-0 ml-4 w-full md:w-[80%] h-[60%] md:h-[80%]">
           {StactData.map((stack, index) => {
             return <Stack Data={stack} key={index} />;
           })}
