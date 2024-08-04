@@ -96,7 +96,7 @@ const ProjectDetails = (props) => {
 function Footer() {
   return (
     <footer className="dark:text-neutral-200 md:mt-8 text-xs  flex justify-center items-center p-3">
-      {new Date().getFullYear()} <p>&copy; All rights reserved</p>
+      {new Date().getFullYear()} <p> &copy; All rights reserved</p>
     </footer>
   );
 }
