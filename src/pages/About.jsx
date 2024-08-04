@@ -9,6 +9,7 @@ import { useContext } from "react";
 
 export default function About() {
   const { darkMode } = useContext(DarkmodeContext);
+
   return (
     <div
       className={`bg-[#ebebeb] w-full md:h-screen h-fit flex flex-col  justify-start md:justify-center items-center overflow-hidden dark:bg-[#0f172a]  ${
@@ -35,6 +36,7 @@ export default function About() {
               alt="profilepix"
             />
           </div>
+
           <div className="flex flex-col gap-4 md:w-[45%] w-full items-start">
             <p className="w-full text-start text-sm select-none dark:text-neutral-200">
               Born in the eastern part of Nigeria, I began my journey as a
@@ -44,8 +46,8 @@ export default function About() {
               consistently sought to improve my level of knowledge and most
               importantly myself.
               <br />
-              Feel free to explore my portfolio and let's start a
-              conversationon how to bring your visions to life
+              Feel free to explore my portfolio and let's start a conversationon
+              how to bring your visions to life
               <h1 className="font-bold mt-2">Let's connect!</h1>
             </p>
             <div className="select-none flex flex-row justify-between  items-start w-full">

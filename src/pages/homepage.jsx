@@ -10,6 +10,7 @@ import { useContext } from "react";
 
 export default function HomePage() {
   const { darkMode } = useContext(DarkmodeContext);
+
   return (
     <div
       className={`flex relative md:justify-center justify-start flex-col items-center h-screen bg-[#ebebeb] dark:bg-[#0f172a]  ${
@@ -26,7 +27,7 @@ export default function HomePage() {
 
             <FaGithub className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all text-xl" />
             <FaLinkedin className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all text-xl" />
-            <a href="https://github.com/Stanley-enumahh">
+            <a href="#">
               <RiInstagramFill className="cursor-pointer dark:text-neutral-200 hover:-translate-y-1 duration-150 transition-all text-xl" />
             </a>
           </div>

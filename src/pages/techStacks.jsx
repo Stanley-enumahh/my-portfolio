@@ -1,5 +1,5 @@
 import { Navbar } from "../components/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { DarkmodeContext } from "../contexts/darkmodeContext";
 import Javascript from "../assets/stacks/JavaScript-Symbol-removebg-preview.png";
 import tailwind from "../assets/stacks/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_dxy1c2bvl6odeo52dodk-removebg-preview.png";
@@ -53,6 +53,7 @@ const StactData = [
 ];
 export const TechStacks = () => {
   const { darkMode } = useContext(DarkmodeContext);
+
   return (
     <div
       className={`flex dark:bg-[#0f172a] flex-col w-full h-screen items-center md:justify-center bg-[#ebebeb] ${
@@ -60,8 +61,8 @@ export const TechStacks = () => {
       } `}
     >
       <Navbar />
-      <div className="flex justify-center items-center gap-4 md:gap-2 flex-col w-[90%] md:w-[80%] h-[90%] md:h-[80%]">
-        <div className="text-center md:mt-6">
+      <div className="flex justify-start gap-4 md:gap-2 flex-col w-[90%] md:w-[80%] h-[90%] md:h-[80%]">
+        <div className="text-center mt-[80px] md:mt-6">
           <h1 className="dark:text-neutral-100 font-bold text-lg">
             Tech Stacks
           </h1>
@@ -69,10 +70,12 @@ export const TechStacks = () => {
             Unveiling technologies that i mostly make use of;
           </p>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-5 items-center md:ml-0 ml-4 w-full md:w-[80%] h-[60%] md:h-[80%]">
-          {StactData.map((stack, index) => {
-            return <Stack Data={stack} key={index} />;
-          })}
+        <div className=" h-[90%] flex w-full justify-center mt-[40px]">
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center w-full md:w-[80%] h-[60%] md:h-[80%] gap-y-7 gap-x-4">
+            {StactData.map((stack, index) => {
+              return <Stack Data={stack} key={index} />;
+            })}
+          </div>
         </div>
       </div>
     </div>

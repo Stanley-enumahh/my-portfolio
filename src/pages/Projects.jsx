@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Project1 from "../assets/project1.jpg";
 import Project2 from "../assets/suitplus-image1.jpg";
 import Project3 from "../assets/mortgage-cal.jpg";
+import Project4 from "../assets/stacks/project4.jpg";
 import { DarkmodeContext } from "../contexts/darkmodeContext";
 import { useContext } from "react";
 const ProjectData = [
@@ -27,6 +28,13 @@ const ProjectData = [
     description:
       "This is a modern calculator that checks the mortgage based on the inputs provided by the user and displays the monthly and total payment.",
     url: "https://stanlee-mortgage-calculator.vercel.app/",
+  },
+  {
+    image: Project4,
+    title: "som23-collection",
+    description:
+      "This is a web-based shopping cart application that allows users to view, add and remove products to their cart. Featuring user-friendly interface and other modern website features, built with javascript and CSS",
+    url: "https://stanley-enumahh.github.io/SOM23-COLLECTION/",
   },
 ];
 
