@@ -24,13 +24,12 @@ const ProjectData = [
       "This is a web-based shopping cart application that allows users to browse and add products to their cart. it features a user-friendly interface and other modern website features",
     url: "https://stanlee-mart.vercel.app/",
   },
-
   {
-    image: Project3,
-    title: "mortgage calculator",
+    image: project5,
+    title: "Blisco foods website",
     description:
-      "This is a modern calculator that checks the mortgage based on the inputs provided by the user and displays the monthly and total payment.",
-    url: "https://stanlee-mortgage-calculator.vercel.app/",
+      "This is a display website built to increase company's sales volume, it displays company's products and contact. This is built on Reactjs.",
+    url: "https://bliscofood.com",
   },
   {
     image: Project4,
@@ -39,13 +38,7 @@ const ProjectData = [
       "This is a web-based shopping cart application that allows users to view, add and remove products to their cart. Featuring user-friendly interface and other modern website features, built with javascript and CSS",
     url: "https://stanley-enumahh.github.io/SOM23-COLLECTION/",
   },
-  {
-    image: project5,
-    title: "Blisco foods website",
-    description:
-      "This is a display website built to increase company's sales volume, it displays company's products and contact. This is built on Reactjs.",
-    url: "https://bliscofood.com",
-  },
+
   {
     image: project7,
     title: "Multi-step-form",
