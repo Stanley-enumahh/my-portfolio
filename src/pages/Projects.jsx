@@ -6,7 +6,10 @@ import Project2 from "../assets/suitplus-image1.jpg";
 import Project3 from "../assets/mortgage-cal.jpg";
 import Project4 from "../assets/stacks/project4.jpg";
 import { DarkmodeContext } from "../contexts/darkmodeContext";
+import project5 from "../assets/project5.jpg";
 import { useContext } from "react";
+import project6 from "../assets/images/active-states.jpg";
+import project7 from "../assets/images/desktop-preview.jpg";
 const ProjectData = [
   {
     image: Project2,
@@ -35,6 +38,26 @@ const ProjectData = [
     description:
       "This is a web-based shopping cart application that allows users to view, add and remove products to their cart. Featuring user-friendly interface and other modern website features, built with javascript and CSS",
     url: "https://stanley-enumahh.github.io/SOM23-COLLECTION/",
+  },
+  {
+    image: project5,
+    title: "Blisco foods website",
+    description:
+      "This is a display website built to increase company's sales volume, it displays company's products and contact. This is built on Reactjs.",
+    url: "https://bliscofood.com",
+  },
+  {
+    image: project7,
+    title: "Multi-step-form",
+    description:
+      "A multi-step-form to handle and store user data and preference for a subscription",
+    url: "https://multi-step-form-stanlee.vercel.app",
+  },
+  {
+    image: project6,
+    title: "Simple cart functionality",
+    description: "Simple cart functionality challenge hosted by fronten mentor",
+    url: "https://simple-test-cart.vercel.app",
   },
 ];
 
