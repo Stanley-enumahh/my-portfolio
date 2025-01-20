@@ -2,20 +2,27 @@ import { Navbar } from "../components/Navbar";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Project1 from "../assets/project1.jpg";
-import Project2 from "../assets/suitplus-image1.jpg";
-import Project3 from "../assets/mortgage-cal.jpg";
+
 import Project4 from "../assets/stacks/project4.jpg";
 import { DarkmodeContext } from "../contexts/darkmodeContext";
 import project5 from "../assets/project5.jpg";
 import { useContext } from "react";
 import project6 from "../assets/images/active-states.jpg";
 import project7 from "../assets/images/desktop-preview.jpg";
+import Xspace from "../assets/images/X-Space (6).png";
 const ProjectData = [
   {
-    image: Project2,
-    title: "SUIT-PLUS",
+    image: Xspace,
+    title: "X-SPACE",
     description:
-      " Suit-plus is an open source internship project, focused on building a web-app that pprovides different kinds of suits for men and addresses several market needs and problems.",
+      "The troubles of paying graphic designers to design posters for your upcoming X events has ended. X space is a simple web app used to generates customizable flyer for upcoming X space (twitter events) from user inputs.",
+    url: "https://space-x-stanlee.vercel.app/",
+  },
+  {
+    image: project6,
+    title: "Simple cart functionality",
+    description: "Simple cart functionality challenge hosted by fronten mentor",
+    url: "https://simple-test-cart.vercel.app",
   },
   {
     image: Project1,
@@ -28,7 +35,7 @@ const ProjectData = [
     image: project5,
     title: "Blisco foods website",
     description:
-      "This is a display website built to increase company's sales volume, it displays company's products and contact. This is built on Reactjs.",
+      "A company's display website built to increase company's sales volume, it displays company's products and contact. This is built on Reactjs.",
     url: "https://bliscofood.com",
   },
   {
@@ -43,14 +50,8 @@ const ProjectData = [
     image: project7,
     title: "Multi-step-form",
     description:
-      "A multi-step-form to handle and store user data and preference for a subscription",
+      "A multi-step-form to handle and store user data and preference for a subscription and displays the overview of the user inputs. This can be applied in a registration system",
     url: "https://multi-step-form-stanlee.vercel.app",
-  },
-  {
-    image: project6,
-    title: "Simple cart functionality",
-    description: "Simple cart functionality challenge hosted by fronten mentor",
-    url: "https://simple-test-cart.vercel.app",
   },
 ];
 
